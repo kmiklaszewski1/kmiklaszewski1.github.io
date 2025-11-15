@@ -164,3 +164,25 @@ header {
     gap: 16px;
   }
 }
+
+.lang-toggle {
+  background-color: transparent;
+  border: 2px solid #f5a9c0;
+  color: #f5a9c0;
+  padding: 8px 12px;
+  border-radius: 6px;
+  text-decoration: none;
+  font-size: 12px;
+  cursor: pointer;
+  transition: all 0.3s;
+  font-weight: 600;
+  font-family: 'Sora', sans-serif;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.lang-toggle:hover {
+  background-color: #f5a9c0;
+  color: #202020;
+}
