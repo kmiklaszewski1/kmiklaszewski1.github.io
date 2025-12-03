@@ -4,13 +4,15 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Carrot Heist</title>
-  <link href="https://fonts.googleapis.com/css?family=Sora:wght@400;600;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Sora:wght@400,600,700&display=swap" rel="stylesheet">
   <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
   <style>
     * { margin: 0; padding: 0; box-sizing: border-box; }
     body { background: #191919; color: #ffeef0; font-family: 'Sora', sans-serif; }
     .go-back { display: inline-block; margin-bottom: 20px; color: #98ffe2; text-decoration: none; font-size: 1.1rem; }
     .project-container { max-width: 1100px; margin: 40px auto; padding: 20px; }
+    .gameplay-video-container { width: 100%; margin-bottom: 60px; border-radius: 10px; overflow: hidden; background: rgba(32,32,32,0.6); }
+    .gameplay-video-container video { width: 100%; height: auto; display: block; }
     h1 { font-size: 2.8rem; color: #98ffe2; margin-bottom: 20px; }
     h2 { font-size: 2rem; color: #ffeef0; margin-top: 40px; margin-bottom: 20px; border-bottom: 2px solid #98ffe2; padding-bottom: 10px; }
     .project-content { display: grid; grid-template-columns: 1fr 1fr; gap: 40px; margin-bottom: 60px; }
@@ -27,7 +29,17 @@
 <body>
   <div class="project-container">
     <a href="index.html" class="go-back"><i class="fas fa-arrow-left"></i> Powrot</a>
+
     <h1>Carrot Heist</h1>
+
+    <!-- Gameplay Video Section -->
+    <div class="gameplay-video-container">
+      <video autoplay muted loop playsinline>
+        <source src="assets/carrot-heist-gameplay.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+      </video>
+    </div>
+
     <div class="project-content">
       <div class="about-section">
         <h2>O Projekcie</h2>
@@ -48,25 +60,29 @@
           <span class="info-value">8 miesiecy</span>
         </div>
         <div class="info-item">
-          <span class="info-label"><i class="fab fa-unity"></i> Silnik:</span>
+          <span class="info-label"><i class="fas fa-gamepad"></i> Silnik:</span>
           <span class="info-value">Unity</span>
         </div>
       </div>
     </div>
+
     <section>
       <h2>Wprowadzenie</h2>
-      <p>Do wypelnienia </p>
+      <p>Do wypelnienia</p>
     </section>
+
     <section>
       <h2>Mechanika Gry</h2>
       <p>Do wypelnienia</p>
     </section>
+
     <section>
       <h2>Czego sie Nauczylem</h2>
-      <p>Do wypelnienia </p>
+      <p>Do wypelnienia</p>
     </section>
+
     <section>
-      <p>Pobierz i graj w Carrot Heist na <a href="https://piotr-wajnert.itch.io/cdv-karrot-v1" target="_blank">itch.io</a></p>
+      <p>Pobierz i graj w Carrot Heist na <a href="https://piotr-wajnert.itch.io/cdv-karrot-v1">itch.io</a></p>
     </section>
   </div>
 </body>
