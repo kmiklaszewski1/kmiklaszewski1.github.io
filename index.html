@@ -145,8 +145,7 @@
 <script>
 function toggleLanguage() {
     const currentPage = window.location.pathname;
-    if (currentPage.includes('index-en.html') || currentPage === '/' || !currentPage.includes('.html')) {
-        window.location.href = '/index.html';
+  if (currentPage.includes('index-en.html')) {        window.location.href = '/index.html';
     } else {
         window.location.href = '/index-en.html';
     }
