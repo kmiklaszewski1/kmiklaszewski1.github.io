@@ -7,6 +7,40 @@
   <link href="https://fonts.googleapis.com/css2?family=Sora:wght@400;600;700&display=swap" rel="stylesheet">
   <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
   <link rel="stylesheet" href="styles.css">
+   <style>
+  .projects-tabs {
+   display: flex;
+   justify-content: space-between;
+   gap: 15px;
+   margin-bottom: 30px;
+   border-bottom: 2px solid #e91e63;
+   padding-bottom: 15px;
+  }
+
+  .tab-btn {
+   font-size: 18px;
+   cursor: pointer;
+   border-bottom: 3px solid transparent;
+   transition: all 0.3s ease;
+  }
+
+  .tab-btn.active {
+   color: #e91e63;
+   border-bottom-color: #e91e63;
+  }
+
+  .tab-btn:hover {
+   color: #e91e63;
+  }
+
+  .tab-content {
+   display: none;
+  }
+
+  .tab-content.active {
+   display: block;
+  }
+ </style>
 </head>
 <body>
   <header>
@@ -35,7 +69,11 @@
 
   <div class="container">
     <h2 class="section-title">Game Programming</h2>
-    <div class="projects-grid">
+     <div class="projects-tabs">
+  <button class="tab-btn active" onclick="switchTab(this)">COMPLETED</button>
+  <button class="tab-btn" onclick="switchTab(this)">IN PROGRESS</button>
+ </div>
+    <div class="ptab-content active" id="completed-projects">
       <div class="project-card">
         <div class="project-media">
 <video autoplay muted loop playsinline><source src="carrot-heist-gameplay.mp4" type="video/mp4"></video>
@@ -80,6 +118,10 @@
         <p class="desc">Description of your third project. Click the arrow for more info.</p>
         <a class="project-link" href="project3.html"><i class="fas fa-arrow-right"></i></a>
       </div>
+
+       </div>
+
+ <div class="tab-content" id="progress-projects">
 
       <div class="project-card">
         <div class="project-media">
@@ -126,9 +168,8 @@
         <a class="project-link" href="project6.html"><i class="fas fa-arrow-right"></i></a>
       </div>
     </div>
-  </div>
-
-  <div class="container skills-section">
+      </div>
+ <div class="container skills-section">
     <h2 class="section-title">Technical Experience</h2>
     <div class="skills-list">
       <span class="skill-tag">C++</span>
@@ -150,5 +191,28 @@ function toggleLanguage() {
         window.location.href = '/index-en.html';
     }
 }
+
+function switchTab(button) {
+ const tabsContainer = button.parentElement;
+ const contentSections = tabsContainer.nextElementSibling;
+ 
+ const allButtons = tabsContainer.querySelectorAll('.tab-btn');
+ allButtons.forEach(btn => btn.classList.remove('active'));
+ button.classList.add('active');
+ 
+ const tabContents = contentSections.parentElement.querySelectorAll('.tab-content');
+ tabContents.forEach(content => content.classList.remove('active'));
+ 
+ const isCompleted = button.textContent.includes('COMPLETED');
+ const activeContent = isCompleted ? 
+  contentSections.parentElement.querySelector('#completed-projects') : 
+  contentSections.parentElement.querySelector('#progress-projects');
+ 
+ if (activeContent) {
+  activeContent.classList.add('active');
+ }
+}
+
 </script>
 </html>
+        
