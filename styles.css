@@ -75,7 +75,7 @@ header {
   height: 250px;
   border-radius: 50%;
   display: block;
-  border: 6px solid rgba(126, 255, 244, 0.4);
+  border: 6px solid #e91e63;
   object-fit: cover;
 }
 .hero-text p {
