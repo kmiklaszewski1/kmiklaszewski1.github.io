@@ -108,8 +108,8 @@ header {
 .project-card {
   background: #272727;
   border-radius: 18px;
-  flex: 1 1 350px;
-  min-width: 330px;
+  flex: 1 1 500px;
+  min-width: 450px;
   max-width: 420px;
   padding-bottom: 30px;
   overflow: hidden;
