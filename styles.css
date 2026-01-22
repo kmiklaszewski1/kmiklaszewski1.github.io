@@ -70,6 +70,11 @@ header {
   gap: 60px;
   align-items: center;
 }
+.hero-image {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
 .hero-image img {
   width: 250px;
   height: 250px;
