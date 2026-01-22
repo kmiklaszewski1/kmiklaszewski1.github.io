@@ -92,10 +92,8 @@ header {
   max-width: 1200px;
   margin: 0 auto;
   padding: 0 60px;
-display: flex;
-    flex-direction: column;
-    align-items: center;
-}
+width: 100%;
+    
 .section-title {
   color: #7efff4;
   font-size: 2rem;
@@ -106,6 +104,7 @@ display: flex;
   display: flex;
   flex-wrap: wrap;
   gap: 30px;
+    justify-content: center;
 }
 .project-card {
   background: #272727;
