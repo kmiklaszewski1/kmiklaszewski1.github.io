@@ -220,3 +220,11 @@ letter-spacing: 0.5px;
 .projects-section.active {
   display: contents;
 }
+
+
+/* Override projects-grid to use grid-template-columns */
+.projects-grid {
+  grid-template-columns: repeat(auto-fit, minmax(380px, 1fr)) !important;
+  flex-wrap: wrap !important;
+  display: grid !important;
+}
