@@ -147,6 +147,9 @@ grid
 }
 .skills-section {
   margin-top: 42px;
+    background-color: rgba(245, 169, 192, 0.1);
+    padding: 30px 40px;
+    border-radius: 12px;
 }
 .skills-list {
   margin-top: 15px;
