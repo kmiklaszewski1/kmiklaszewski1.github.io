@@ -16,6 +16,7 @@
                 <p class="title" data-en="Game Developer / Technical Designer" data-pl="Game Developer / Technical Designer">Game Developer / Technical Designer</p>
             </div>
             <div class="header-right">
+                                <button id="langToggle" class="lang-toggle" onclick="toggleLanguage()">PL</button>
                 <a href="https://www.linkedin.com/in/kamil-miklaszewski-7a5609201" class="social-icon" target="_blank" aria-label="LinkedIn">
                     <i class="fab fa-linkedin"></i>
                 </a>
@@ -26,7 +27,7 @@
                     <i class="fab fa-instagram"></i>
                 </a>
                 <a href="https://kmiklaszewski1.github.io/Kamil%20Miklaszewski%20%E2%80%93%20CV%20-%20Github.pdf" target="_blank" class="resume-btn">
-                    <span data-en="Resume" data-pl="CV">CV</span> <i class="fas fa-arrow-down"></i>
+                    <span data-en="Resume" data-pl="Resume">Resume</span> <i class="fas fa-arrow-down"></i>
                 </a>
             </div>
         </div>
@@ -65,5 +66,29 @@
     </main>
 
     <script src="app.js"></script>
+        <script>
+        function toggleLanguage() {
+            const currentLang = document.documentElement.lang;
+            const newLang = currentLang === 'pl' ? 'en' : 'pl';
+            document.documentElement.lang = newLang;
+            
+            // Update button text
+            const btn = document.getElementById('langToggle');
+            btn.textContent = newLang === 'pl' ? 'EN' : 'PL';
+            
+            // Update all elements with data-en and data-pl
+            document.querySelectorAll('[data-en][data-pl]').forEach(el => {
+                const text = newLang === 'pl' ? el.dataset.pl : el.dataset.en;
+                if (el.tagName === 'INPUT' || el.tagName === 'TEXTAREA') {
+                    el.value = text;
+                } else {
+                    el.textContent = text;
+                }
+            });
+            
+            // Re-render projects
+            renderProjects();
+        }
+    </script>
 </body>
 </html>
