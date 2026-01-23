@@ -6,7 +6,7 @@
 }
 
 body {
-    background: #0a0a0a;
+    background: ##1a1a1a;
     color: #e4e4e4;
     font-family: 'Sora', sans-serif;
     line-height: 1.6;
@@ -15,7 +15,7 @@ body {
 
 /* Header */
 .header {
-    background: #0a0a0a;
+    background: ##1a1a1a;
     padding: 40px 60px;
     border-bottom: 1px solid #1a1a1a;
 }
@@ -68,6 +68,24 @@ body {
     transform: translateY(-2px);
 }
 
+
+.lang-toggle {
+    width: 48px;
+    height: 48px;
+    background: transparent;
+    border: 2px solid #f5a9c0;
+    border-radius: 8px;
+    color: #f5a9c0;
+    font-size: 16px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.lang-toggle:hover {
+    background: #f5a9c0;
+    color: #0a0a0a;
+}
 .resume-btn {
     padding: 12px 24px;
     background: transparent;
@@ -252,7 +270,7 @@ body {
 .skill-tag {
     padding: 12px 24px;
     background: transparent;
-    border: 2px solid #444;
+    border: 2px solid ##f5a9c0;
     border-radius: 50px;
     color: #e4e4e4;
     font-size: 15px;
@@ -307,5 +325,8 @@ body {
     
     .section-title {
         font-size: 28px;
+            font-weight: 700;
+    color: #7fd8d8;
+    margin-bottom: 50px;
     }
 }
