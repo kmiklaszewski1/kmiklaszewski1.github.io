@@ -1,243 +1,239 @@
 <!DOCTYPE html>
 <html lang="pl">
 <head>
- <meta charset="UTF-8">
- <meta name="viewport" content="width=device-width, initial-scale=1.0">
- <title>Kamil Miklaszewski - Game Programmer</title>
- <link href="https://fonts.googleapis.com/css2?family=Sora:wght@400;600;700&display=swap" rel="stylesheet">
- <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
- <link rel="stylesheet" href="styles.css">
- <style>
- .projects-tabs {
- display: flex;
- justify-content: space-between;
- gap: 15px;
- margin-bottom: 30px;
- border-bottom: 2px solid #f5a9c0;
- padding-bottom: 15px;
- }
- 
- .tab-btn {
- padding: 8px 20px;
- border: none;
- background: transparent;
- color: #f5a9c0;
- font-weight: 600;
- font-size: 24px;
- cursor: pointer;
- border-bottom: 3px solid transparent;
- transition: all 0.3s ease;
- }
- 
- .tab-btn.active {
- color: #f5a9c0;
- border-bottom-color: #f5a9c0;
- }
- 
- .tab-btn:hover {
- color: #f5a9c0;
- }
- 
- .projects-section {
- display: none;
- }
- 
- .projects-section.active {
- display: block;
- }
- 
- h3 {
- font-size: 20px;
- font-weight: 700;
- margin-bottom: 20px;
- margin-top: 0;
- }
- 
- .hero-text {
- display: block !important;
- border: 2px solid #f5a9c0 !important;
- padding: 20px 25px !important;
- border-radius: 8px !important;
- }
- </style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Kamil Miklaszewski - Game Programmer</title>
+  <link href="https://fonts.googleapis.com/css2?family=Sora:wght@400;600;700&display=swap" rel="stylesheet">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+  <style>
+    .projects-tabs {
+      display: flex;
+      gap: 15px;
+      margin-bottom: 30px;
+      border-bottom: 2px solid #e91e63;
+      padding-bottom: 15px;
+    }
+    
+    .tab-btn {
+      padding: 8px 20px;
+      border: none;
+      background: transparent;
+      color: #64748b;
+      font-weight: 600;
+      font-size: 14px;
+      cursor: pointer;
+      border-bottom: 3px solid transparent;
+      transition: all 0.3s ease;
+    }
+    
+    .tab-btn.active {
+      color: #e91e63;
+      border-bottom-color: #e91e63;
+    }
+    
+    .tab-btn:hover {
+      color: #e91e63;
+    }
+    
+    .projects-section {
+      display: none;
+    }
+    
+    .projects-section.active {
+      display: block;
+    }
+    
+    .section-subtitle {
+      font-size: 20px;
+      font-weight: 700;
+      margin-bottom: 20px;
+      margin-top: 0;
+    }
+  </style>
 </head>
 <body>
- <header>
- <div class="header-left">
- <h1>Kamil Miklaszewski</h1>
- <p>Game Developer / Technical Designer</p>
- </div>
- <div class="header-right">
- <button id="langToggle" class="lang-toggle" onclick="toggleLanguage()">EN</button>
- <a href="https://www.linkedin.com/in/kamil-miklaszewski-7a5609201" class="social-link" target="_blank" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
- <a href="https://github.com/kmiklaszewski1" class="social-link" target="_blank" aria-label="GitHub"><i class="fab fa-github"></i></a>
- <a href="https://www.instagram.com/kamiloo_official" class="social-link" target="_blank" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
- <a href="https://kmiklaszewski1.github.io/Kamil%20Miklaszewski%20%E2%80%93%20CV%20-%20Github.pdf" target="_blank" class="resume-btn">Resume <i class="fas fa-arrow-down"></i></a>
- </div>
- </header>
- 
- <section class="hero">
- <div class="hero-container">
- <div class="hero-image">
- <img src="https://raw.githubusercontent.com/kmiklaszewski1/kmiklaszewski1.github.io/main/582088064_854637057021471_8330761815630538227_n.jpg" alt="Kamil Miklaszewski" style="border: 6px solid #f5a9c0 !important;">
- </div>
- <div class="hero-text">
- <p>Student kierunku Game Development na Collegium Da Vinci w Poznaniu. Głównie projektuję i koduję gry w Unity i Unreal Engine. Skupiam się na pisaniu zwięzłego i wydajnego kodu i podejmowaniu wyzwań w zakresie tworzenia gier.</p>
- </div>
- </div>
- </section>
- 
- <div class="container">
- <h2 class="section-title">Programowanie gier</h2>
- 
- <div class="projects-tabs">
- <button class="tab-btn active" data-tab="finished">Ukończone</button>
- <button class="tab-btn" data-tab="inprogress">W Trakcie</button>
- </div>
- 
- <div class="projects-section active" data-section="finished">
- <h3 style="color: #f5a9c0;">Ukończone</h3>
- <div class="projects-grid">
- <div class="project-card">
- <div class="project-media">
- <video autoplay muted loop playsinline>
- <source src="carrot-heist-gameplay.mp4" type="video/mp4">
- </video>
- </div>
- <div class="project-meta">
- <span><i class="fas fa-users"></i> 4</span>
- <span><i class="fas fa-clock"></i> 8 miesięcy</span>
- <span><i class="fab fa-unity"></i> Unity</span>
- </div>
- <h3><a href="project1.html" class="project-title">Carrot Heist</a></h3>
- <p class="role">Lead Programmer & UI Designer</p>
- <p class="desc">Carrot Heist to gra zainspirowana grą Ogień i Woda. W tym projekcie byłem 'multitaskerem' tworząc animacje, programując, implementując ekrany wygranej i przegranej, aż po tworzenie menu głównego.</p>
- <a class="project-link" href="project1.html"><i class="fas fa-arrow-right"></i></a>
- </div>
- 
- <div class="project-card">
- <div class="project-media">
- <video controls poster="screenshot2.jpg" src="film2.mp4" width="100%" height="200"></video>
- </div>
- <div class="project-meta">
- <span><i class="fas fa-users"></i> 3</span>
- <span><i class="fas fa-clock"></i> 4 tygodnie</span>
- <span><i class="fab fa-unity"></i> Unity</span>
- </div>
- <h3>Projekt #2</h3>
- <p class="role">Lead Programmer & UI Designer</p>
- <p class="desc">Opis Twojego drugiego projektu. Kliknij na strzałkę po więcej info.</p>
- <a class="project-link" href="project2.html"><i class="fas fa-arrow-right"></i></a>
- </div>
- 
- <div class="project-card">
- <div class="project-media">
- <video controls poster="screenshot3.jpg" src="film3.mp4" width="100%" height="200"></video>
- </div>
- <div class="project-meta">
- <span><i class="fas fa-users"></i> 4</span>
- <span><i class="fas fa-clock"></i> 5 tygodni</span>
- <span><i class="fab fa-unreal"></i> Unreal Engine</span>
- </div>
- <h3>Projekt #3</h3>
- <p class="role">Lead Programmer & UI Designer</p>
- <p class="desc">Opis Twojego trzeciego projektu. Kliknij na strzałkę po więcej info.</p>
- <a class="project-link" href="project3.html"><i class="fas fa-arrow-right"></i></a>
- </div>
- </div>
- </div>
- 
- <div class="projects-section" data-section="inprogress">
- <h3 style="color: #f5a9c0;">W Trakcie</h3>
- <div class="projects-grid">
- <div class="project-card">
- <div class="project-media">
- <video controls poster="screenshot4.jpg" src="film4.mp4" width="100%" height="200"></video>
- </div>
- <div class="project-meta">
- <span><i class="fas fa-users"></i> 2</span>
- <span><i class="fas fa-clock"></i> 3 tygodnie</span>
- <span><i class="fab fa-unreal"></i> Unreal Engine</span>
- </div>
- <h3>Projekt #4</h3>
- <p class="role">Lead Programmer & UI Designer</p>
- <p class="desc">Opis Twojego czwartego projektu. Kliknij na strzałkę po więcej info.</p>
- <a class="project-link" href="project4.html"><i class="fas fa-arrow-right"></i></a>
- </div>
- 
- <div class="project-card">
- <div class="project-media">
- <video controls poster="screenshot5.jpg" src="film5.mp4" width="100%" height="200"></video>
- </div>
- <div class="project-meta">
- <span><i class="fas fa-users"></i> 5</span>
- <span><i class="fas fa-clock"></i> 6 tygodni</span>
- <span><i class="fab fa-unity"></i> Unity</span>
- </div>
- <h3>Projekt #5</h3>
- <p class="role">Lead Programmer & UI Designer</p>
- <p class="desc">Opis Twojego piątego projektu. Kliknij na strzałkę po więcej info.</p>
- <a class="project-link" href="project5.html"><i class="fas fa-arrow-right"></i></a>
- </div>
- 
- <div class="project-card">
- <div class="project-media">
- <video controls poster="screenshot6.jpg" src="film6.mp4" width="100%" height="200"></video>
- </div>
- <div class="project-meta">
- <span><i class="fas fa-users"></i> 1</span>
- <span><i class="fas fa-clock"></i> 2 tygodnie</span>
- <span><i class="fab fa-unity"></i> Unity</span>
- </div>
- <h3>Projekt #6</h3>
- <p class="role">Lead Programmer & UI Designer</p>
- <p class="desc">Opis Twojego szóstego projektu. Kliknij na strzałkę po więcej info.</p>
- <a class="project-link" href="project6.html"><i class="fas fa-arrow-right"></i></a>
- </div>
- </div>
- </div>
- 
- <script>
- document.querySelectorAll('.tab-btn').forEach(btn => {
- btn.addEventListener('click', () => {
- const tab = btn.getAttribute('data-tab');
- // Ukryj wszystkie sekcje
- document.querySelectorAll('.projects-section').forEach(section => {
- section.classList.remove('active');
- });
- // Aktywuj wybraną sekcję
- const activeSection = document.querySelector(`[data-section="${tab}"]`);
- if (activeSection) {
- activeSection.classList.add('active');
- }
- // Zmień aktywny przycisk
- document.querySelectorAll('.tab-btn').forEach(b => b.classList.remove('active'));
- btn.classList.add('active');
- });
- });
- </script>
- 
- <div class="container skills-section">
- <h2 class="section-title">Doświadczenie techniczne</h2>
- <div class="skills-list">
- <span class="skill-tag">C++</span>
- <span class="skill-tag">C#</span>
- <span class="skill-tag">Unity</span>
- <span class="skill-tag">Unreal Engine</span>
- <span class="skill-tag">Jira</span>
- <span class="skill-tag">Git</span>
- <span class="skill-tag">GitHub</span>
- </div>
- </div>
-</body>
+  <header>
+    <div class="header-left">
+      <h1>Kamil Miklaszewski</h1>
+      <p>Game Developer / Technical Designer</p>
+    </div>
+    <div class="header-right">
+<button id="langToggle" class="lang-toggle" onclick="toggleLanguage()">EN</button>
+        <a href="https://www.linkedin.com/in/kamil-miklaszewski-7a5609201" class="social-link" target="_blank" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
+        <a href="https://github.com/kmiklaszewski1" class="social-link" target="_blank" aria-label="GitHub"><i class="fab fa-github"></i></a>
+        <a href="https://www.instagram.com/kamiloo_official" class="social-link" target="_blank" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+       <a href="https://kmiklaszewski1.github.io/Kamil%20Miklaszewski%20%E2%80%93%20CV%20-%20Github.pdf" target="_blank" class="resume-btn">Resume <i class="fas fa-arrow-down"></i></a>
+    </div>
+  </header>
+
+  <section class="hero">
+    <div class="hero-container">
+      <div class="hero-image">
+        <img src="https://raw.githubusercontent.com/kmiklaszewski1/kmiklaszewski1.github.io/main/582088064_854637057021471_8330761815630538227_n.jpg" alt="Kamil Miklaszewski">
+      </div>
+      <div class="hero-text">
+        <p>Student kierunku Game Development na Collegium Da Vinci w Poznaniu. Głównie projektuję i koduję gry w Unity i Unreal Engine. Skupiam się na pisaniu zwięzłego i wydajnego kodu i podejmowaniu wyzwań w zakresie tworzenia gier.</p>
+      </div>
+    </div>
+  </section>
+
+  <div class="container">
+    <h2 class="section-title">Programowanie gier</h2>
+        <!-- ZAKLADKI PROJEKTY -->
+    <div class="projects-tabs">
+      <button class="tab-btn active" data-tab="finished">Ukąńczone</button>
+      <button class="tab-btn" data-tab="inprogress">W Trakcie</button>
+    </div>
+
+    <!-- SEKCJA 1: UKOŃCZONE (PROJEKTY 1-3) -->
+    <div class="projects-section active" data-section="finished">
+      <h3 class="section-subtitle" style="color: #e91e63;">Ukąńczone</h3>
+      <div class="project-card">
+        <div class="project-media">
+<video autoplay muted loop playsinline><source src="carrot-heist-gameplay.mp4" type="video/mp4"></video>
+        </div>
+        <div class="project-meta">
+          <span><i class="fas fa-users"></i> 4</span>
+          <span><i class="fas fa-clock"></i> 8 miesięcy</span>
+          <span><i class="fab fa-unity"></i> Unity</span>
+        </div>
+        <h3><a href="project1.html" class="project-title">Carrot Heist</a></h3>
+        <p class="role">Lead Programmer & UI Designer</p>
+        <p class="desc">Carrot Heist to gra zainspirowana grą Ogień i Woda. W tym projekcie byłem 'multitaskerem' tworząc animacje, programując, implementując ekrany wygranej i przegranej, aż po tworzenie menu głównego.</p>
+        <a class="project-link" href="project1.html"><i class="fas fa-arrow-right"></i></a>
+      </div>
+
+      <div class="project-card">
+        <div class="project-media">
+          <video controls poster="screenshot2.jpg" src="film2.mp4" width="100%" height="200"></video>
+        </div>
+        <div class="project-meta">
+          <span><i class="fas fa-users"></i> 3</span>
+          <span><i class="fas fa-clock"></i> 4 tygodnie</span>
+          <span><i class="fab fa-unity"></i> Unity</span>
+        </div>
+        <h3>Projekt #2</h3>
+        <p class="role">Lead Programmer & UI Designer</p>
+        <p class="desc">Opis Twojego drugiego projektu. Kliknij na strzałkę po więcej info.</p>
+        <a class="project-link" href="project2.html"><i class="fas fa-arrow-right"></i></a>
+      </div>
+
+      <div class="project-card">
+        <div class="project-media">
+          <video controls poster="screenshot3.jpg" src="film3.mp4" width="100%" height="200"></video>
+        </div>
+        <div class="project-meta">
+          <span><i class="fas fa-users"></i> 4</span>
+          <span><i class="fas fa-clock"></i> 5 tygodni</span>
+          <span><i class="fab fa-unreal"></i> Unreal Engine</span>
+        </div>
+        <h3>Projekt #3</h3>
+        <p class="role">Lead Programmer & UI Designer</p>
+        <p class="desc">Opis Twojego trzeciego projektu. Kliknij na strzałkę po więcej info.</p>
+        <a class="project-link" href="project3.html"><i class="fas fa-arrow-right"></i></a>
+      </div>
+          </div>  <!-- KONIEC projects-grid dla Uĵńczone -->
+    </div>  <!-- KONIEC projects-section ukńńczone -->
+
+    <!-- SEKCJA 2: PROJEKTY W TRAKCIE (PROJEKTY 4-6) -->
+    <div class="projects-section" data-section="inprogress">
+      <h3 class="section-subtitle" style="color: #e91e63;">W Trakcie</h3>
+      <div class="projects-grid">
+
+      <div class="project-card">
+        <div class="project-media">
+          <video controls poster="screenshot4.jpg" src="film4.mp4" width="100%" height="200"></video>
+        </div>
+        <div class="project-meta">
+          <span><i class="fas fa-users"></i> 2</span>
+          <span><i class="fas fa-clock"></i> 3 tygodnie</span>
+          <span><i class="fab fa-unreal"></i> Unreal Engine</span>
+        </div>
+        <h3>Projekt #4</h3>
+        <p class="role">Lead Programmer & UI Designer</p>
+        <p class="desc">Opis Twojego czwartego projektu. Kliknij na strzałkę po więcej info.</p>
+        <a class="project-link" href="project4.html"><i class="fas fa-arrow-right"></i></a>
+      </div>
+
+      <div class="project-card">
+        <div class="project-media">
+          <video controls poster="screenshot5.jpg" src="film5.mp4" width="100%" height="200"></video>
+        </div>
+        <div class="project-meta">
+          <span><i class="fas fa-users"></i> 5</span>
+          <span><i class="fas fa-clock"></i> 6 tygodni</span>
+          <span><i class="fab fa-unity"></i> Unity</span>
+        </div>
+        <h3>Projekt #5</h3>
+        <p class="role">Lead Lead Programmer & UI Designer</p>
+        <p class="desc">Opis Twojego piątego projektu. Kliknij na strzałkę po więcej info.</p>
+        <a class="project-link" href="project5.html"><i class="fas fa-arrow-right"></i></a>
+      </div>
+
+      <div class="project-card">
+        <div class="project-media">
+          <video controls poster="screenshot6.jpg" src="film6.mp4" width="100%" height="200"></video>
+        </div>
+        <div class="project-meta">
+          <span><i class="fas fa-users"></i> 1</span>
+          <span><i class="fas fa-clock"></i> 2 tygodnie</span>
+          <span><i class="fab fa-unity"></i> Unity</span>
+        </div>
+        <h3>Projekt #6</h3>
+        <p class="role">Lead Programmer & UI Designer</p>
+        <p class="desc">Opis Twojego szóstego projektu. Kliknij na strzałkę po więcej info.</p>
+        <a class="project-link" href="project6.html"><i class="fas fa-arrow-right"></i></a>
+      </div>
+    </div>
+  </div>
+          </div>  <!-- KONIEC projects-grid dla W Trakcie -->
+    </div>  <!-- KONIEC projects-section w trakcie -->
+
+    <!-- JAVASCRIPT DLA ZAKLADEK -->
+    <script>
+      document.querySelectorAll('.tab-btn').forEach(btn => {
+        btn.addEventListener('click', () => {
+          const tab = btn.getAttribute('data-tab');
+          // Ukryj wszystkie sekcje
+          document.querySelectorAll('.projects-section').forEach(section => {
+            section.classList.remove('active');
+            section.style.display = 'none';
+          });
+          // Aktywuj wybraną sekcję
+          const activeSection = document.querySelector(`[data-section="${tab}"]`);
+          if (activeSection) {
+            activeSection.classList.add('active');
+            activeSection.style.display = 'block';
+          }
+          // Zmień aktywny przycisk
+          document.querySelectorAll('.tab-btn').forEach(b => b.classList.remove('active'));
+          btn.classList.add('active');
+        });
+      });
+    </script>
+
+  <div class="container skills-section">
+    <h2 class="section-title">Doświadczenie techniczne</h2>
+    <div class="skills-list">
+      <span class="skill-tag">C++</span>
+      <span class="skill-tag">C#</span>
+      <span class="skill-tag">Unity</span>
+      <span class="skill-tag">Unreal Engine</span>
+      <span class="skill-tag">Jira</span>
+      <span class="skill-tag">Git</span>
+      <span class="skill-tag">GitHub</span>
+    </div>
+  </div>
+
 <script>
 function toggleLanguage() {
- const currentPage = window.location.pathname;
- if (currentPage.includes('index-en.html')) {
- window.location.href = '/index.html';
- } else {
- window.location.href = '/index-en.html';
- }
+    const currentPage = window.location.pathname;
+  if (currentPage.includes('index-en.html')) {        window.location.href = '/index.html';
+    } else {
+        window.location.href = '/index-en.html';
+    }
 }
 </script>
 </html>
