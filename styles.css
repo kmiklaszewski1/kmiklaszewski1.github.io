@@ -5,6 +5,11 @@
     box-sizing: border-box;
 }
 
+:root {
+    --pink: #ff69b4;   /* róż */
+    --cyan: #7fd8d8;   /* Twój cyjan */
+}
+
 body {
     background: #2a2a2a;
     color: #e4e4e4;
@@ -15,10 +20,9 @@ body {
 
 /* Header */
 .header {
-background: #2a2a2a;
-padding: 20px 60px;    
+    background: #2a2a2a;
+    padding: 20px 60px;
     border-bottom: 1px solid #1a1a1a;
-    
 }
 
 .header-content {
@@ -31,11 +35,17 @@ padding: 20px 60px;
     gap: 30px;
 }
 
+/* Domyślnie nagłówek na różowo */
 .header-left h1.name {
     font-size: 48px;
     font-weight: 700;
-    color: #7fd8d8;
+    color: var(--pink);
     margin-bottom: 8px;
+}
+
+/* TYLKO imię i nazwisko na cyjan */
+.header-left h1.main-name {
+    color: var(--cyan);
 }
 
 .header-left p.title {
@@ -53,7 +63,7 @@ padding: 20px 60px;
 .social-icon {
     width: 48px;
     height: 48px;
-    background: #7fd8d8;
+    background: var(--pink);
     border-radius: 8px;
     display: flex;
     align-items: center;
@@ -65,18 +75,17 @@ padding: 20px 60px;
 }
 
 .social-icon:hover {
-    background: #ff8fb3;
+    background: var(--cyan);
     transform: translateY(-2px);
 }
-
 
 .lang-toggle {
     width: 48px;
     height: 48px;
     background: transparent;
-    border: 2px solid #7fd8d8;
+    border: 2px solid var(--pink);
     border-radius: 8px;
-    color: #7fd8d8;
+    color: var(--pink);
     font-size: 16px;
     font-weight: 600;
     cursor: pointer;
@@ -84,15 +93,16 @@ padding: 20px 60px;
 }
 
 .lang-toggle:hover {
-    background: #7fd8d8;
+    background: var(--pink);
     color: #0a0a0a;
 }
+
 .resume-btn {
     padding: 12px 24px;
     background: transparent;
-    border: 2px solid #7fd8d8;
+    border: 2px solid var(--pink);
     border-radius: 8px;
-    color: #7fd8d8;
+    color: var(--pink);
     text-decoration: none;
     font-weight: 600;
     font-size: 16px;
@@ -103,14 +113,14 @@ padding: 20px 60px;
 }
 
 .resume-btn:hover {
-    background: #7fd8d8;
+    background: var(--pink);
     color: #0a0a0a;
 }
 
 /* Hero Section */
 .hero {
     padding: 80px 60px;
-    background: ##1a1a1a;
+    background: #1a1a1a;
 }
 
 .hero-container {
@@ -127,7 +137,7 @@ padding: 20px 60px;
     height: 280px;
     border-radius: 50%;
     overflow: hidden;
-    border: 6px solid #7fd8d8;
+    border: 6px solid var(--pink);
 }
 
 .hero-image {
@@ -136,13 +146,21 @@ padding: 20px 60px;
     object-fit: cover;
 }
 
-
 .hero-text {
-    border: 2px solid #f5a9c0;
+    border: 2px solid var(--pink);
     border-radius: 8px;
     padding: 24px;
-        display: inline-block;
+    display: inline-block;
 }
+
+/* klasa o której mówiłeś – ramka + czytelna czcionka */
+.about-box {
+    border: 2px solid var(--pink);
+    border-radius: 8px;
+    padding: 24px;
+    display: inline-block;
+}
+
 .hero-text p {
     font-size: 22px;
     line-height: 1.8;
@@ -157,11 +175,18 @@ padding: 20px 60px;
     padding: 60px;
 }
 
+/* Domyślnie tytuły sekcji na różowo */
 .section-title {
     font-size: 36px;
     font-weight: 700;
-    color: #7fd8d8;
+    color: var(--pink);
     margin-bottom: 50px;
+}
+
+/* TYLKO te dwie sekcje na cyjan */
+.section-title.section-games,
+.section-title.section-tech {
+    color: var(--cyan);
 }
 
 /* Projects Grid */
@@ -218,7 +243,7 @@ padding: 20px 60px;
 .project-title {
     font-size: 28px;
     font-weight: 700;
-    color: #7fd8d8;
+    color: var(--pink);
     margin-bottom: 12px;
     text-decoration: none;
     display: block;
@@ -226,7 +251,7 @@ padding: 20px 60px;
 }
 
 .project-title:hover {
-    color: #ff8fb3;
+    color: var(--cyan);
 }
 
 .project-role {
@@ -249,7 +274,7 @@ padding: 20px 60px;
     right: 30px;
     width: 40px;
     height: 40px;
-    background: #7fd8d8;
+    background: var(--pink);
     border-radius: 50%;
     display: flex;
     align-items: center;
@@ -260,7 +285,7 @@ padding: 20px 60px;
 }
 
 .project-card:hover .project-arrow {
-    background: #ff8fb3;
+    background: var(--cyan);
     transform: translateX(5px);
 }
 
@@ -278,7 +303,7 @@ padding: 20px 60px;
 .skill-tag {
     padding: 12px 24px;
     background: transparent;
-    border: 2px solid #7fd8d8;
+    border: 2px solid var(--pink);
     border-radius: 50px;
     color: #e4e4e4;
     font-size: 15px;
@@ -287,8 +312,8 @@ padding: 20px 60px;
 }
 
 .skill-tag:hover {
-    border-color: #7fd8d8;
-    color: #7fd8d8;
+    border-color: var(--cyan);
+    color: var(--cyan);
     transform: translateY(-2px);
 }
 
@@ -333,8 +358,8 @@ padding: 20px 60px;
     
     .section-title {
         font-size: 28px;
-            font-weight: 700;
-    color: #7fd8d8;
-    margin-bottom: 50px;
+        font-weight: 700;
+        color: var(--pink);
+        margin-bottom: 50px;
     }
 }
