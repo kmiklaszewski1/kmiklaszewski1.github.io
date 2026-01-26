@@ -6,8 +6,8 @@
 }
 
 :root {
-   --pink: #f8c9d4;   /* jasny pudrowy róż  
-   --cyan: #7fd8d8;   /* Twój cyjan */
+    --pink: #f8c9d4;   /* jasny róż */
+    --cyan: #7fd8d8;   /* cyjan */
 }
 
 body {
