@@ -12,11 +12,11 @@
     <header class="header">
         <div class="header-content">
             <div class="header-left">
-                <h1 class="name" data-en="Kamil Miklaszewski" data-pl="Kamil Miklaszewski">Kamil Miklaszewski</h1>
+                <h1 class="name main-name" data-en="Kamil Miklaszewski" data-pl="Kamil Miklaszewski">Kamil Miklaszewski</h1>
                 <p class="title" data-en="Game Developer / Technical Designer" data-pl="Game Developer / Technical Designer">Game Developer / Technical Designer</p>
             </div>
             <div class="header-right">
-                                <button id="langToggle" class="lang-toggle" onclick="toggleLanguage()">PL</button>
+                <button id="langToggle" class="lang-toggle" onclick="toggleLanguage()">PL</button>
                 <a href="https://www.linkedin.com/in/kamil-miklaszewski-7a5609201" class="social-icon" target="_blank" aria-label="LinkedIn">
                     <i class="fab fa-linkedin"></i>
                 </a>
@@ -38,21 +38,21 @@
             <div class="hero-image-wrapper">
                 <img src="https://raw.githubusercontent.com/kmiklaszewski1/kmiklaszewski1.github.io/main/582088064_854637057021471_8330761815630538227_n.jpg" alt="Kamil Miklaszewski" class="hero-image">
             </div>
-            <div class="hero-text">
+            <div class="hero-text about-box">
                 <p data-en="Game Development student at Collegium Da Vinci in Poznań. I primarily design and code games in Unity and Unreal Engine. I focus on writing concise and efficient code and taking on challenges in game development." data-pl="Student kierunku Game Development na Collegium Da Vinci w Poznaniu. Głównie projektuję i koduję gry w Unity i Unreal Engine. Skupiam się na pisaniu zwięzłego i wydajnego kodu i podejmowaniu wyzwań w zakresie tworzenia gier.">Student kierunku Game Development na Collegium Da Vinci w Poznaniu. Głównie projektuję i koduję gry w Unity i Unreal Engine. Skupiam się na pisaniu zwięzłego i wydajnego kodu i podejmowaniu wyzwań w zakresie tworzenia gier.</p>
             </div>
         </div>
     </section>
 
     <main class="container">
-        <h2 class="section-title" data-en="Game Programming" data-pl="Programowanie gier">Programowanie gier</h2>
+        <h2 class="section-title section-games" data-en="Game Programming" data-pl="Programowanie gier">Programowanie gier</h2>
         
         <div class="projects-grid" id="projects-container">
             <!-- Projects will be dynamically loaded -->
         </div>
 
         <section class="skills-section">
-            <h2 class="section-title" data-en="Technical Experience" data-pl="Doświadczenie techniczne">Doświadczenie techniczne</h2>
+            <h2 class="section-title section-tech" data-en="Technical Experience" data-pl="Doświadczenie techniczne">Doświadczenie techniczne</h2>
             <div class="skills-container">
                 <span class="skill-tag">C++</span>
                 <span class="skill-tag">C#</span>
@@ -66,17 +66,15 @@
     </main>
 
     <script src="app.js"></script>
-        <script>
+    <script>
         function toggleLanguage() {
             const currentLang = document.documentElement.lang;
             const newLang = currentLang === 'pl' ? 'en' : 'pl';
             document.documentElement.lang = newLang;
             
-            // Update button text
             const btn = document.getElementById('langToggle');
             btn.textContent = newLang === 'pl' ? 'EN' : 'PL';
             
-            // Update all elements with data-en and data-pl
             document.querySelectorAll('[data-en][data-pl]').forEach(el => {
                 const text = newLang === 'pl' ? el.dataset.pl : el.dataset.en;
                 if (el.tagName === 'INPUT' || el.tagName === 'TEXTAREA') {
@@ -86,7 +84,6 @@
                 }
             });
             
-            // Re-render projects
             renderProjects();
         }
     </script>
