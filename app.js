@@ -12,7 +12,7 @@ const projectsData = [
         image: 'carrot-heist-gameplay.mp4',
         description: 'Carrot Heist is a game inspired by Fireboy and Watergirl. In this project I was a multitasker creating animations, programming, implementing victory and defeat screens, and creating the main menu.',
         descriptionPL: 'Carrot Heist to gra zainspirowana grą Ogień i Woda. W tym projekcie byłem multitaskerem tworząc animacje, programując, implementując ekrany wygranej i przegranej, aż po tworzenie menu głównego.',
-        link: 'project1.html',
+        link: 'project1.html',   // tutaj podstawisz docelowy link do Carrot Heist
         isVideo: true
     }
     // Add more projects here
@@ -49,16 +49,24 @@ function renderProjects() {
                     <span><i class="fas fa-clock"></i> ${duration}</span>
                     <span><i class="fab fa-${project.engine.toLowerCase() === 'unity' ? 'unity' : 'unreal'}"></i> ${project.engine}</span>
                 </div>
-                <a href="${project.link}" class="project-title">${title}</a>
+                <a href="${project.link}" class="project-title" target="_blank" rel="noopener noreferrer">${title}</a>
                 <p class="project-role">${role}</p>
                 <p class="project-desc">${description}</p>
-                <div class="project-arrow">
+                <button class="project-arrow" data-link="${project.link}" aria-label="Zobacz ${title}">
                     <i class="fas fa-arrow-right"></i>
-                </div>
+                </button>
             </div>
         `;
         
         container.appendChild(projectCard);
+    });
+
+    // Obsługa kliknięcia strzałek – otwiera ten sam link co tytuł
+    document.querySelectorAll('.project-arrow').forEach(btn => {
+        const link = btn.getAttribute('data-link');
+        btn.onclick = () => {
+            window.open(link, '_blank', 'noopener,noreferrer');
+        };
     });
 }
 
