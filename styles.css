@@ -16,8 +16,9 @@ body {
 /* Header */
 .header {
 background: #2a2a2a;
-    padding: 40px 60px;
+padding: 20px 60px;    
     border-bottom: 1px solid #1a1a1a;
+    
 }
 
 .header-content {
@@ -136,13 +137,15 @@ background: #2a2a2a;
 }
 
 
-.hero-text {
-    border: 2px solid #7fd8d8;
+106
+{
+    border: 2px solid #f5a9c0;
     border-radius: 8px;
     padding: 24px;
         display: inline-block;
 }
-.hero-text p {
+17
+p {
     font-size: 22px;
     line-height: 1.8;
     color: #d4d4d4;
