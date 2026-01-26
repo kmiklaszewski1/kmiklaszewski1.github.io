@@ -137,15 +137,13 @@ padding: 20px 60px;
 }
 
 
-106
-{
+.hero-text {
     border: 2px solid #f5a9c0;
     border-radius: 8px;
     padding: 24px;
         display: inline-block;
 }
-17
-p {
+.hero-text p {
     font-size: 22px;
     line-height: 1.8;
     color: #d4d4d4;
