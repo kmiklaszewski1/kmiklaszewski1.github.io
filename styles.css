@@ -445,3 +445,52 @@ body {
 .project-link:hover {
     background: var(--pink);
 }
+
+/* Project Meta Top - Above Image */
+.project-meta-top {
+  display: flex;
+  gap: 20px;
+  padding: 16px 30px;
+  background: rgba(248, 201, 212, 0.05);
+  border-bottom: 1px solid rgba(248, 201, 212, 0.1);
+  font-size: 14px;
+  color: #b4b4b4;
+}
+
+.project-meta-top span {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.project-meta-top i {
+  color: var(--pink);
+  font-size: 16px;
+}
+
+/* Project Arrow Wrapper */
+.project-arrow-wrapper {
+  padding: 20px 30px;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.project-arrow {
+  width: 48px;
+  height: 48px;
+  background: var(--pink);
+  border: none;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #0a0a0a;
+  font-size: 20px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.project-arrow:hover {
+  background: var(--cyan);
+  transform: translateX(5px);
+}
