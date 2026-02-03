@@ -13,9 +13,10 @@ const projectsData = [
         description: 'Carrot Heist is a game inspired by Fireboy and Watergirl. In this project I was a multitasker creating animations, programming, implementing victory and defeat screens, and creating the main menu.',
         descriptionPL: 'Carrot Heist to gra zainspirowana grą Ogień i Woda. W tym projekcie byłem multitaskerem tworząc animacje, programując, implementując ekrany wygranej i przegranej, aż po tworzenie menu głównego.',
         link: 'project1.html',   // tutaj podstawisz docelowy link do Carrot Heist
-        isVideo: true,
-    {
-      title: 'Game Programming 2',
+        isVideo: true},
+    
+{
+        title: 'Game Programming 2',
       titlePl: 'Game Programming 2',
       role: 'Game Programmer',
       rolePl: 'Game Programmer',
