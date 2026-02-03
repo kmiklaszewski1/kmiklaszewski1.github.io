@@ -18,46 +18,46 @@ const projectsData = [
     
 {
         title: 'Game Programming 2',
-      titlePl: 'Game Programming 2',
+      titlePL: 'Game Programming 2',
       role: 'Game Programmer',
-      rolePl: 'Game Programmer',
+      rolePL: 'Game Programmer',
       team: '2',
       duration: '4 weeks',
-      durationPl: '4 tygodnie',
+      durationPL: '4 tygodnie',
       engine: 'Unity',
       image: 'carrot-heist-gameplay.mp4',
       description: 'A challenging game development project showcasing advanced programming techniques and innovative gameplay mechanics.',
-      descriptionPl: 'Ambitny projekt tworzenia gry demonstrujący zaawansowane techniki programowania i innowacyjną mechanikę gry.',
+      descriptionPL: 'Ambitny projekt tworzenia gry demonstrujący zaawansowane techniki programowania i innowacyjną mechanikę gry.',
       link: 'project1.html',
       isVideo: true
     },
     {
       title: 'Game Programming 3',
-      titlePl: 'Game Programming 3',
+      titlePL: 'Game Programming 3',
       role: 'Game Programmer',
-      rolePl: 'Game Programmer
+      rolePL: 'Game Programmer
       team: '3',
       duration: '6 weeks',
-      durationPl: '6 tygodni',
+      durationPL: '6 tygodni',
       engine: 'Unreal Engine',
       image: 'carrot-heist-gameplay.mp4',
       description: 'An advanced game development project with complex systems and professional-grade gameplay.',
-      descriptionPl: 'Zaawansowany projekt gry z złożonymi systemami i grą na profesjonalnym poziomie.',
+      descriptionPL: 'Zaawansowany projekt gry z złożonymi systemami i grą na profesjonalnym poziomie.',
       link: 'project1.html',
       isVideo: true
     },
     {
       title: 'Game Programming 4',
-      titlePl: 'Game Programming 4',
+      titlePL: 'Game Programming 4',
       role: 'Lead Game Programmer',
-      rolePl: 'Lead Game Programmer',
+      rolePL: 'Lead Game Programmer',
       team: '4',
       duration: '8 weeks',
-      durationPl: '8 tygodni',
+      durationPL: '8 tygodni',
       engine: 'C++',
       image: 'carrot-heist-gameplay.mp4',
       description: 'A comprehensive game development project demonstrating mastery of game programming principles and best practices.',
-      descriptionPl: 'Kompleksowy projekt tworzenia gry demonstrujący opanowanie zasad programowania gier i best practices.',
+      descriptionPL: 'Kompleksowy projekt tworzenia gry demonstrujący opanowanie zasad programowania gier i best practices.',
       link: 'project1.html',
       isVideo: true
     }
