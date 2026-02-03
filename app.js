@@ -31,11 +31,11 @@ const projectsData = [
       link: 'project1.html',
       isVideo: true
     },
-    {  {
+    {
       title: 'Game Programming 3',
       titlePl: 'Game Programming 3',
       role: 'Game Programmer',
-      rolePl: 'Game Programmer',
+      rolePl: 'Game Programmer
       team: '3',
       duration: '6 weeks',
       durationPl: '6 tygodni',
