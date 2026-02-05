@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Programowanie Gier 2</title>
+    <title>Tap Tap King</title>
     <link href="https://fonts.googleapis.com/css?family=Sora:wght@400,600,700&display=swap" rel="stylesheet">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
     <style>
@@ -21,7 +21,9 @@
         .info-label { color: #f5a9c0; font-weight: 600; white-space: nowrap; }
         .info-value { color: #facad7; }
         section { margin-bottom: 50px; line-height: 1.6; }
-        section p { font-size: 1.2rem; color: #ffffff; }
+        section p { font-size: 1.2rem; color: #ffffff; margin-bottom: 15px; }
+        section ul { margin-left: 30px; margin-top: 15px; }
+        section li { font-size: 1.1rem; color: #ffffff; margin-bottom: 10px; }
         a { color: #f5a9c0; text-decoration: underline; }
         @media (max-width: 768px) { .project-content { grid-template-columns: 1fr; } }
     </style>
@@ -29,12 +31,12 @@
 <body>
     <div class="project-container">
         <a href="index.html" class="go-back"><i class="fas fa-arrow-left"></i> Powrot</a>
-        <h1>Programowanie Gier 2</h1>
+        <h1>Tap Tap King 🪐👑</h1>
 
         <!-- Gameplay Video Section -->
         <div class="gameplay-video-container">
             <video autoplay muted loop playsinline>
-                <source src="project2-gameplay.mp4" type="video/mp4">
+                <source src="taptapking-gameplay.mp4" type="video/mp4">
                 Your browser does not support the video tag.
             </video>
         </div>
@@ -42,33 +44,92 @@
         <div class="project-content">
             <div class="about-section">
                 <h2>O Projekcie</h2>
-                <p>Ambitny projekt gry demonstrujacy zaawansowane techniki programowania i innowacyjna mechanike rozgrywki.</p>
+                <p>Tap Tap King to hyper-casualowa gra mobilna na iOS stworzona w Unity. Jest to kosmiczne wyzwanie polegające na jak najszybszym tapowaniu przycisku z planetą przez 10 sekund, aby pobić własne rekordy i wspiąć się na szczyt tabeli wyników!</p>
             </div>
 
             <div class="project-info">
                 <h2>Informacje Projektu</h2>
                 <div class="info-item">
                     <span class="info-label"><i class="fas fa-user"></i> Rola:</span>
-                    <span class="info-value">Game Programmer</span>
+                    <span class="info-value">Solo Developer (Programowanie, Design, UI/UX)</span>
                 </div>
                 <div class="info-item">
-                    <span class="info-label"><i class="fas fa-users"></i> Rozmiar Zespolu:</span>
-                    <span class="info-value">2</span>
+                    <span class="info-label"><i class="fas fa-users"></i> Rozmiar Zespołu:</span>
+                    <span class="info-value">1 (projekt solowy)</span>
                 </div>
                 <div class="info-item">
                     <span class="info-label"><i class="fas fa-clock"></i> Czas Trwania:</span>
-                    <span class="info-value">4 tygodnie</span>
+                    <span class="info-value">2 miesiące</span>
                 </div>
                 <div class="info-item">
                     <span class="info-label"><i class="fas fa-gamepad"></i> Silnik:</span>
-                    <span class="info-value">Unity</span>
+                    <span class="info-value">Unity 6 z 2D URP</span>
+                </div>
+                <div class="info-item">
+                    <span class="info-label"><i class="fas fa-mobile"></i> Platforma:</span>
+                    <span class="info-value">iOS (iPhone)</span>
                 </div>
             </div>
         </div>
 
         <section>
-            <h2>Opis Projektu</h2>
-            <p>Treść do uzupełnienia.</p>
+            <h2>Wprowadzenie</h2>
+            <p>Tap Tap King to mój pierwszy solowy projekt mobilny na iOS. Chciałem stworzyć prostą, ale wciągającą grę typu hyper-casual, która byłaby łatwa do nauki, ale trudna do opanowania. Inspiracją była idea prostych gier zręcznościowych, które można rozegrać w kilka sekund, ale które motywują gracza do ciągłego poprawiania swoich wyników.</p>
+            <p>Projekt ten był dla mnie doskonałą okazją, aby nauczyć się tworzenia gier mobilnych na iOS, poznać specyfikę optymalizacji dla urządzeń mobilnych oraz zaimplementować system lokalnego zapisu wyników.</p>
+        </section>
+
+        <section>
+            <h2>Mechanika Gry</h2>
+            <p>Gra opiera się na prostej, ale uzależniającej mechanice:</p>
+            <ul>
+                <li><strong>Tapowanie:</strong> Gracz musi tapować centralny przycisk z planetą tak szybko, jak to możliwe.</li>
+                <li><strong>Timer:</strong> Każda runda trwa dokładnie 10 sekund.</li>
+                <li><strong>System punktacji:</strong> Wynik = liczba tapnięć; najlepszy wynik jest zapisywany lokalnie za pomocą PlayerPrefs.</li>
+                <li><strong>Natychmiastowy restart:</strong> Po każdej grze możliwość szybkiego restartu i porównania wyniku z poprzednim rekordem.</li>
+            </ul>
+
+            <h2 style="margin-top: 30px;">Kosmiczny Motyw</h2>
+            <ul>
+                <li><strong>Tło:</strong> Gwiazdy i kosmiczny gradient tworzą immersyjną atmosferę kosmosu.</li>
+                <li><strong>Przycisk:</strong> Animowana planeta z licznikiem tapnięć w centrum.</li>
+                <li><strong>Efekty wizualne:</strong> Efekty cząsteczkowe przy każdym tapnięciu, neonowe elementy UI.</li>
+                <li><strong>Płynne animacje:</strong> Responsywna i płynna mechanika tapowania w całej rozgrywce.</li>
+            </ul>
+        </section>
+
+        <section>
+            <h2>Technologie i Narzędzia</h2>
+            <ul>
+                <li><strong>Silnik:</strong> Unity 6 z 2D Universal Render Pipeline (zoptymalizowany dla urządzeń mobilnych iOS).</li>
+                <li><strong>Język:</strong> C# dla wszystkich skryptów gry.</li>
+                <li><strong>Główne skrypty:</strong>
+                    <ul style="margin-left: 20px; margin-top: 10px;">
+                        <li>TapGameManager.cs - obsługuje logikę gry i zliczanie tapnięć.</li>
+                        <li>UIManager.cs - zarządza wyświetlaniem wyników i aktualizacjami UI.</li>
+                        <li>Integracja PlayerPrefs - trwały lokalny zapis wyników.</li>
+                    </ul>
+                </li>
+                <li><strong>System UI:</strong> Canvas Scaler dla responsywnego designu na wszystkich modelach iPhone.</li>
+                <li><strong>Lokalizacja:</strong> Angielski.</li>
+            </ul>
+        </section>
+
+        <section>
+            <h2>Czego się Nauczyłem</h2>
+            <p>Praca nad Tap Tap King była niezwykle pouczającym doświadczeniem, które pozwoliło mi rozwinąć wiele umiejętności:</p>
+            <ul>
+                <li><strong>Rozwój mobilny na iOS:</strong> Nauczyłem się całego procesu tworzenia gier na iOS - od konfiguracji projektu w Unity, przez build w Xcode, aż po przygotowanie do publikacji w App Store Connect.</li>
+                <li><strong>Optymalizacja wydajności:</strong> Zrozumiałem znaczenie optymalizacji dla urządzeń mobilnych - lekki pipeline assetów, efektywna detekcja tapnięć z minimalnym obciążeniem CPU.</li>
+                <li><strong>UI/UX Design:</strong> Samodzielnie zaprojektowałem cały interfejs użytkownika, co nauczyło mnie zasad responsywnego designu i dostosowywania UI do różnych rozmiarów ekranów iPhone.</li>
+                <li><strong>Zarządzanie projektem solo:</strong> Jako jedyny programista i designer, musiałem zarządzać wszystkimi aspektami projektu - od planowania, przez implementację, po testowanie.</li>
+                <li><strong>Systemy zapisu danych:</strong> Zaimplementowałem system lokalnego zapisu wyników używając PlayerPrefs, co było moim pierwszym doświadczeniem z trwałym zapisem danych w grze.</li>
+                <li><strong>Unity 6 i 2D URP:</strong> Poznałem nowe możliwości Unity 6 oraz Universal Render Pipeline w kontekście gier 2D.</li>
+            </ul>
+            <p>Ten projekt pokazał mi, że samodzielne tworzenie gry od podstaw wymaga nie tylko umiejętności programistycznych, ale także kreatywności, cierpliwości i zdolności do rozwiązywania problemów. Zdobyte doświadczenie w developmencie mobilnym na iOS będzie nieocenione w moich przyszłych projektach.</p>
+        </section>
+
+        <section>
+            <p>Zobacz repozytorium projektu na <a href="https://github.com/kmiklaszewski1/TapTapKing-iOS" target="_blank">GitHubie</a></p>
         </section>
 
     </div>
