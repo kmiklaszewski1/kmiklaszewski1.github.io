@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Programowanie Gier 3</title>
+    <title>Boomfield</title>
     <link href="https://fonts.googleapis.com/css?family=Sora:wght@400,600,700&display=swap" rel="stylesheet">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
     <style>
@@ -21,56 +21,116 @@
         .info-label { color: #f5a9c0; font-weight: 600; white-space: nowrap; }
         .info-value { color: #facad7; }
         section { margin-bottom: 50px; line-height: 1.6; }
-        section p { font-size: 1.2rem; color: #ffffff; }
+        section p { font-size: 1.2rem; color: #ffffff; margin-bottom: 15px; }
+        section ul { margin-left: 30px; margin-top: 15px; }
+        section li { font-size: 1.1rem; color: #ffffff; margin-bottom: 10px; }
         a { color: #f5a9c0; text-decoration: underline; }
         @media (max-width: 768px) { .project-content { grid-template-columns: 1fr; } }
     </style>
 </head>
 <body>
     <div class="project-container">
-        <a href="index.html" class="go-back"><i class="fas fa-arrow-left"></i> Powrot</a>
-        <h1>Programowanie Gier 3</h1>
-
+        <a href="index.html" class="go-back"><i class="fas fa-arrow-left"></i> Powrót</a>
+        <h1>Boomfield 💣</h1>
+        
         <!-- Gameplay Video Section -->
         <div class="gameplay-video-container">
             <video autoplay muted loop playsinline>
-                <source src="project3-gameplay.mp4" type="video/mp4">
+                <source src="carrot-heist-gameplay.mp4" type="video/mp4">
                 Your browser does not support the video tag.
             </video>
         </div>
-
+        
         <div class="project-content">
             <div class="about-section">
                 <h2>O Projekcie</h2>
-                <p>Zaawansowany projekt gry z złożonymi systemami i grąwką na profesjonalnym poziomie.</p>
+                <p>Boomfield to dynamiczna arena multiplayer inspirowana klasycznym gameplayem Boom Bit. Gracze rywalizują poprzez strategiczne umieszczanie bomb i wykorzystywanie elementów środowiska do eliminowania przeciwników. Gra jest obecnie w trakcie aktywnego rozwoju przez zespół trzech studentów CDV w Poznańu.</p>
             </div>
-
+            
             <div class="project-info">
                 <h2>Informacje Projektu</h2>
                 <div class="info-item">
                     <span class="info-label"><i class="fas fa-user"></i> Rola:</span>
-                    <span class="info-value">Game Programmer</span>
+                    <span class="info-value">Programmer & UI/UX Designer</span>
                 </div>
                 <div class="info-item">
-                    <span class="info-label"><i class="fas fa-users"></i> Rozmiar Zespolu:</span>
-                    <span class="info-value">3</span>
+                    <span class="info-label"><i class="fas fa-users"></i> Rozmiar Zespołu:</span>
+                    <span class="info-value">3 (kmiklaszewski1, Okamishi, Reddragonpanda)</span>
                 </div>
                 <div class="info-item">
                     <span class="info-label"><i class="fas fa-clock"></i> Czas Trwania:</span>
-                    <span class="info-value">6 tygodni</span>
+                    <span class="info-value">W trakcie rozwoju</span>
                 </div>
                 <div class="info-item">
                     <span class="info-label"><i class="fas fa-gamepad"></i> Silnik:</span>
-                    <span class="info-value">Unreal Engine</span>
+                    <span class="info-value">Unreal Engine 5</span>
+                </div>
+                <div class="info-item">
+                    <span class="info-label"><i class="fas fa-desktop"></i> Platforma:</span>
+                    <span class="info-value">Windows PC</span>
                 </div>
             </div>
         </div>
-
+        
         <section>
-            <h2>Opis Projektu</h2>
-            <p>Treść do uzupełnienia.</p>
+            <h2>Wprowadzenie</h2>
+            <p>Boomfield to projekt, który narodził się z pasji do klasycznych gier akcji z elementami strategii. Zainspirowa ni klasycznym gameplayem Boom Bit, chcieliśmy stworzyć dynamiczną arenę multiplayer, gdzie gracze muszą szybko myśleć, przewidywać ruchy przeciwników i wykorzystywać środowisko do swojej przewagi.</p>
+            <p>Projekt jest rozwijany w ramach studiów Game Development na Collegium Da Vinci w Poznańu. Jako zespół trzech osób, każdy wnosi unikalne umiejętności - ja skupiam się na programowaniu mechanik gameplay'u oraz projektowaniu i implementacji interfejsu użytkownika.</p>
         </section>
-
+        
+        <section>
+            <h2>Mechanika Gry</h2>
+            <p>Boomfield oferuje intensywny, strategiczny gameplay oparty na następujących elementach:</p>
+            <ul>
+                <li><strong>Umieszczanie bomb:</strong> Gracze strategicznie rozmieszczają bomby na arenie, planując zasięg wybuchu i timing.</li>
+                <li><strong>Interakcja ze środowiskiem:</strong> Elementy mapy mogą być wykorzystywane jako osłony lub pułapki dla przeciwników.</li>
+                <li><strong>Dynamiczne starcia:</strong> Szybka akcja wymagająca refleksu i strategicznego myślenia.</li>
+                <li><strong>System eliminacji:</strong> Gracze muszą unikać wybuchów jednocześnie próbując wyeliminować rywali.</li>
+                <li><strong>Multiplayer:</strong> Rozgrywki wieloosobowe, gdzie każda decyzja może zadecydować o zwycięstwie lub porażce.</li>
+            </ul>
+            
+            <h2 style="margin-top: 30px;">Moja Rola - Programowanie & UI/UX</h2>
+            <p>W projekcie Boomfield odpowiadam za kluczowe aspekty techniczne i designu:</p>
+            <ul>
+                <li><strong>Menu główne:</strong> Zaprojektowałem i zaimplementowałem kompletny system menu głównego z intuicyjną nawigacją.</li>
+                <li><strong>Ekran How to Play:</strong> Stworzyłem interaktywny tutorial wyjaśniający mechaniki gry nowym graczom.</li>
+                <li><strong>System UI:</strong> Projektowanie i programowanie elementów interfejsu gry (HUD, ekrany przejściowe, menu pauzy).</li>
+                <li><strong>Mechaniki gameplay:</strong> Współpraca przy implementacji podstawowych mechanik rozgrywki w Blueprints i C++.</li>
+                <li><strong>User Experience:</strong> Dbałość o płynność interakcji i responsywność interfejsu.</li>
+            </ul>
+        </section>
+        
+        <section>
+            <h2>Technologie i Narzędzia</h2>
+            <ul>
+                <li><strong>Silnik:</strong> Unreal Engine 5 - wykorzystując najnowsze możliwości graficzne i narzędzia deweloperskie.</li>
+                <li><strong>Języki:</strong> Blueprints Visual Scripting oraz C++ dla bardziej zaawansowanych systemów.</li>
+                <li><strong>UI Framework:</strong> UMG (Unreal Motion Graphics) dla wszystkich elementów interfejsu.</li>
+                <li><strong>Version Control:</strong> Git z GitHub dla zarządzania wersjami i kolaboracji zespołowej.</li>
+                <li><strong>Project Management:</strong> Trello i Discord dla komunikacji i organizacji zadań.</li>
+                <li><strong>Assets:</strong> Kombinacja assetów z Marketplace oraz custom content stworzonych przez zespół.</li>
+            </ul>
+        </section>
+        
+        <section>
+            <h2>Czego się Nauczyłem</h2>
+            <p>Praca nad Boomfield to moje pierwsze doświadczenie z Unreal Engine 5 oraz rozwojem gry w większym zespole. Projekt dostarczył mi cennych lekcji:</p>
+            <ul>
+                <li><strong>Unreal Engine 5:</strong> Nauczyłem się korzystać z zaawansowanych narzędzi UE5, w tym Blueprints, UMG, i podstaw C++ w kontekście silnika.</li>
+                <li><strong>Praca zespołowa:</strong> Współpraca z dwoma innymi programistami nauczyła mnie ważności komunikacji, code review i dzielenia zadań.</li>
+                <li><strong>Version Control w zespole:</strong> Zarządzanie branchami, merge conflicts i collaborative workflow w GitHubie.</li>
+                <li><strong>UI/UX Design w grach:</strong> Projektowanie intuicyjnych interfejsów, które są zarówno funkcjonalne, jak i estetyczne.</li>
+                <li><strong>Implementacja menu:</strong> Kompletny workflow od prototypu w Figma, przez design w UMG, aż po implementację logiki w Blueprints.</li>
+                <li><strong>Optymalizacja UI:</strong> Zrozumienie wydajności interfejsów i technik optymalizacji widgetów UMG.</li>
+                <li><strong>Iteracyjny development:</strong> Praca w cyklach sprintów, regularne testowanie i wprowadzanie feedback'u do następnych iteracji.</li>
+                <li><strong>Debugging w UE5:</strong> Narzędzia debugowania Unreal Engine, w tym Blueprints debugger i profiling tools.</li>
+            </ul>
+            <p>Boomfield to projekt, który ciągle się rozwija. Każdy dzień przynosi nowe wyzwania i okazje do nauki. Najbardziej satysfakcjonujące jest widzenie, jak nasze pomysły i ciężka praca przekształcają się w grywalne doświadczenie. Nie mogę się docze kać, aby podzielić się finałowym produktem!</p>
+        </section>
+        
+        <section>
+            <p>Zobacz repozytorium projektu na <a href="https://github.com/kmiklaszewski1/Boomfield" target="_blank">GitHubie</a></p>
+        </section>
     </div>
 </body>
 </html>
