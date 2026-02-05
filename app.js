@@ -1,8 +1,8 @@
 // Projects Data
 const projectsData = [
   {
-    title: 'Carrot Heist',
-    titlePL: 'Carrot Heist',
+    title: 'Carrot Heist 🥕',
+    titlePL: 'Carrot Heist 🥕',
     role: 'Lead Programmer & UI Designer',
     rolePL: 'Lead Programmer & UI Designer',
     team: '4',
