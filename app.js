@@ -27,8 +27,7 @@ const projectsData = [
     description: 'A hyper-casual iOS tapping game built in Unity. Cosmic challenge: tap the planet button as fast as you can for 10 seconds to beat your records!',
     descriptionPL: 'Hyper-casualowa gra mobilna na iOS stworzona w Unity. Kosmiczne wyzwanie: tapuj przycisk z planetą tak szybko jak możesz przez 10 sekund, aby pobić swoje rekordy!',
     link: 'project2.html'
-  }, {}, {
-    title: 'Boomfield 💣',
+  }, {    title: 'Boomfield 💣',
     titlePl: 'Boomfield 💣',
     role: 'Programmer & UI/UX Designer',
     rolePl: 'Programista & UI/UX Designer',
@@ -40,7 +39,7 @@ const projectsData = [
     description: 'A dynamic multiplayer arena game inspired by classic Boom Bit gameplay. Players compete by strategically placing bombs and using environmental elements to eliminate opponents. Built in Unreal Engine 5 by a team of three students.',
     descriptionPl: 'Dynamiczna arena multiplayer inspirowana klasycznym gameplayem Boom Bit. Gracze rywalizują poprzez strategiczne umieszczanie bomb i wykorzystywanie elementów środowiska do eliminowania przeciwników. Tworzona w Unreal Engine 5 przez zespół trzech studentów.',
     link: 'project3.html'
-  }
+  },
   {
     title: 'Game Programming 4',
     titlePL: 'Programowanie Gier 4',
