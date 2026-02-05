@@ -15,7 +15,7 @@ const projectsData = [
     link: 'project1.html'
   },
  {
-    title: 'Tap Tap King',
+    title: 'Tap Tap King 🪐',
     titlePL: 'Tap Tap King',
     role: 'Solo Developer',
     rolePL: 'Solo Developer',
