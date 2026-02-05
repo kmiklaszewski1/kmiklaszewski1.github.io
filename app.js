@@ -41,17 +41,17 @@ const projectsData = [
     link: 'project3.html'
   },
   {
-    title: 'Game Programming 4',
-    titlePL: 'Programowanie Gier 4',
-    role: 'Lead Game Programmer',
-    rolePL: 'Lead Game Programmer',
-    team: '4',
-    duration: '8 weeks',
-    durationPL: '8 tygodni',
-    engine: 'C++',
+    title: 'Game of Spores 🃏',
+    titlePL: 'Game of Spores 🃏',
+    role: 'Lead Programmer & Systems Designer',
+    rolePL: 'Lead Programmer & Systems Designer',
+    team: '5',
+    duration: 'In Development',
+    durationPL: 'W trakcie',
+    engine: 'Unity 2D',
     image: 'carrot-heist-gameplay.mp4',
-    description: 'A comprehensive game development project demonstrating mastery of game programming principles and best practices.',
-    descriptionPL: 'Kompleksowy projekt gry demonstrujący opanowanie zasad programowania gier i best practices.',
+    description: 'An innovative turn-based card game utilizing a unique combat and energy management system. Features "discard for energy" mechanics, card tagging for synergy effects, multiple game modes (Story, Dungeon, PvP, Coop), character progression, and deck building. Developed as a diploma project at Collegium Da Vinci.',
+    descriptionPL: 'Innowacyjna turowa gra karciana wykorzystująca unikalny system walki i zarządzania energią. Zawiera mechanikę "odrzuć za energię", tagowanie kart dla efektów synergii, wiele trybów gry (Historia, Dungeon, PvP, Coop), progresję postaci i budowanie talii. Tworzona jako projekt dyplomowy na Collegium Da Vinci.',
     link: 'project4.html'
   }
 ];
