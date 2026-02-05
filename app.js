@@ -14,19 +14,20 @@ const projectsData = [
     descriptionPL: 'Multiplayer game inspirowana gra Ogoń i Woda. Odpowiadałem za programowanie mechaniki, implementację UI i tworzenie menu głównego.',
     link: 'project1.html'
   },
-  {
-    title: 'Tap Tap King 🪐👑',    titlePL: 'Tap Tap King 🪐👑',
+ {
+    title: 'Tap Tap King 🪐👑',
+    titlePl: 'Tap Tap King 🪐👑',
     role: 'Solo Developer',
     rolePl: 'Solo Developer',
     team: '1',
     duration: '2 months',
     durationPl: '2 miesiące',
     engine: 'Unity',
-    image: 'taptapking-gameplay.mp4',    description: 'A challenging game development project showcasing advanced programming techniques and innovative gameplay mechanics.',
-    descriptionPL: 'Ambitny projekt gry demonstrujący zaawansowane techniki programowania i innowacyjną mechanikę rozgrywki.',
+    image: 'taptapking-gameplay.mp4',
+    description: 'A hyper-casual iOS tapping game built in Unity. Cosmic challenge: tap the planet button as fast as you can for 10 seconds to beat your records!',
+    descriptionPL: 'Hyper-casualowa gra mobilna na iOS stworzona w Unity. Kosmiczne wyzwanie: tapuj przycisk z planetą tak szybko jak możesz przez 10 sekund, aby pobić swoje rekordy!',
     link: 'project2.html'
-  },
-  {
+  }, {
     title: 'Game Programming 3',
     titlePL: 'Programowanie Gier 3',
     role: 'Solo Developer',
