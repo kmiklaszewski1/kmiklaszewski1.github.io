@@ -16,8 +16,7 @@ const projectsData = [
   },
  {
     title: 'Tap Tap King 🪐',
-    titlePL: 'Tap Tap King',
-    role: 'Solo Developer',
+    titlePL: 'Tap Tap King 🪐',    role: 'Solo Developer',
     rolePL: 'Solo Developer',
     team: '1',
     duration: '2 months',
