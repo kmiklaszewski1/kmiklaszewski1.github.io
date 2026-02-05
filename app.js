@@ -36,7 +36,7 @@ const projectsData = [
     engine: 'Unreal Engine',
     image: 'carrot-heist-gameplay.mp4',
     description: 'A dynamic multiplayer arena game inspired by classic Boom Bit gameplay. Players compete by strategically placing bombs and using environmental elements to eliminate opponents. Built in Unreal Engine 5 by a team of three students.',
-    descriptionPl: 'Dynamiczna arena multiplayer inspirowana klasycznym gameplayem Boom Bit. Gracze rywalizują poprzez strategiczne umieszczanie bomb i wykorzystywanie elementów środowiska do eliminowania przeciwników. Tworzona w Unreal Engine 5 przez zespół trzech studentów.',
+    descriptionPL: 'Dynamiczna arena multiplayer inspirowana klasycznym gameplayem Boom Bit. Gracze rywalizują poprzez strategiczne umieszczanie bomb i wykorzystywanie elementów środowiska do eliminowania przeciwników. Tworzona w Unreal Engine 5 przez zespół trzech studentów.',
     link: 'project3.html'
   },
   {
