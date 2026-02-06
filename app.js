@@ -23,7 +23,7 @@ const projectsData = [
     duration: '2 months',
     durationPL: '2 miesiące',
     engine: 'Unity',
-    image: 'taptapking-gameplay.mp4',
+    image: 'tap-tap-king-gameplay.mp4',
     description: 'A hyper-casual iOS tapping game built in Unity. Cosmic challenge: tap the planet button as fast as you can for 10 seconds to beat your records!',
     descriptionPL: 'Hyper-casualowa gra mobilna na iOS stworzona w Unity. Kosmiczne wyzwanie: tapuj przycisk z planetą tak szybko jak możesz przez 10 sekund, aby pobić swoje rekordy!',
     link: 'project2.html'
