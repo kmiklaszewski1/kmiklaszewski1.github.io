@@ -14,9 +14,10 @@ const projectsData = [
     descriptionPL: 'Multiplayer game inspirowana gra Ogoń i Woda. Odpowiadałem za programowanie mechaniki, implementację UI i tworzenie menu głównego.',
     link: 'project1.html'
   },
- {
+  {
     title: 'Tap Tap King 🪐',
-    titlePL: 'Tap Tap King 🪐',    role: 'Solo Developer',
+    titlePL: 'Tap Tap King 🪐',
+    role: 'Solo Developer',
     rolePL: 'Solo Developer',
     team: '1',
     duration: '2 months',
@@ -26,7 +27,9 @@ const projectsData = [
     description: 'A hyper-casual iOS tapping game built in Unity. Cosmic challenge: tap the planet button as fast as you can for 10 seconds to beat your records!',
     descriptionPL: 'Hyper-casualowa gra mobilna na iOS stworzona w Unity. Kosmiczne wyzwanie: tapuj przycisk z planetą tak szybko jak możesz przez 10 sekund, aby pobić swoje rekordy!',
     link: 'project2.html'
-  }, {    title: 'Boomfield 💣',
+  },
+  {
+    title: 'Boomfield 💣',
     titlePL: 'Boomfield 💣',
     role: 'Programmer & UI/UX Designer',
     rolePL: 'Programista & UI/UX Designer',
@@ -48,8 +51,9 @@ const projectsData = [
     duration: 'In Development',
     durationPL: 'W trakcie',
     engine: 'Unity 2D',
-    image: 'game-of-spores-qameplay.mp4.mp4',    description: 'An innovative turn-based card game utilizing a unique combat and energy management system. Features "discard for energy" mechanics, card tagging for synergy effects, multiple game modes (Story, Dungeon, PvP, Coop), character progression, and deck building. Developed as a diploma project at Collegium Da Vinci.',
-    descriptionPL: 'Innowacyjna turowa gra karciana wykorzystująca unikalny system walki i zarządzania energią. Zawiera mechanikę "odrzuć za energię", tagowanie kart dla efektów synergii, wiele trybów gry (Historia, Dungeon, PvP, Coop), progresję postaci i budowanie talii. Tworzona jako projekt dyplomowy na Collegium Da Vinci.',
+    image: 'game-of-spores-gameplay.mp4',
+    description: 'An innovative turn-based card game utilizing a unique combat and energy management system. Features \"discard for energy\" mechanics, card tagging for synergy effects, multiple game modes (Story, Dungeon, PvP, Coop), character progression, and deck building. Developed as a diploma project at Collegium Da Vinci.',
+    descriptionPL: 'Innowacyjna turowa gra karciana wykorzystująca unikalny system walki i zarządzania energią. Zawiera mechanikę \"odrzuć za energię\", tagowanie kart dla efektów synergii, wiele trybów gry (Historia, Dungeon, PvP, Coop), progresję postaci i budowanie talii. Tworzona jako projekt dyplomowy na Collegium Da Vinci.',
     link: 'project4.html'
   }
 ];
@@ -71,24 +75,24 @@ function renderProjects() {
     const duration = currentLang === 'pl' ? project.durationPL : project.duration;
     
     projectCard.innerHTML = `
-      <div class="project-image-wrapper">
-        <video autoplay muted loop playsinline style="width: 100%; height: 100%; object-fit: cover;">
-          <source src="${project.image}" type="video/mp4">
+      <div class=\"project-image-wrapper\">
+        <video autoplay muted loop playsinline style=\"width: 100%; height: 100%; object-fit: cover;\">
+          <source src=\"${project.image}\" type=\"video/mp4\">
         </video>
       </div>
-      <div class="project-meta-top">
-        <span><i class="fas fa-users"></i> ${project.team}</span>
-        <span><i class="fas fa-clock"></i> ${duration}</span>
-        <span><i class="fas fa-code"></i> ${project.engine}</span>
+      <div class=\"project-meta-top\">
+        <span><i class=\"fas fa-users\"></i> ${project.team}</span>
+        <span><i class=\"fas fa-clock\"></i> ${duration}</span>
+        <span><i class=\"fas fa-code\"></i> ${project.engine}</span>
       </div>
-      <div class="project-content">
-        <a href="${project.link}" class="project-title" target="_blank" rel="noopener noreferrer">${title}</a>
-        <p class="project-role">${role}</p>
-        <p class="project-desc">${description}</p>
+      <div class=\"project-content\">
+        <a href=\"${project.link}\" class=\"project-title\" target=\"_blank\" rel=\"noopener noreferrer\">${title}</a>
+        <p class=\"project-role\">${role}</p>
+        <p class=\"project-desc\">${description}</p>
       </div>
-      <div class="project-arrow-wrapper">
-        <button class="project-arrow" data-link="${project.link}" aria-label="View ${title}">
-          <i class="fas fa-arrow-right"></i>
+      <div class=\"project-arrow-wrapper\">
+        <button class=\"project-arrow\" data-link=\"${project.link}\" aria-label=\"View ${title}\">
+          <i class=\"fas fa-arrow-right\"></i>
         </button>
       </div>
     `;
