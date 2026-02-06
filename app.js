@@ -24,8 +24,8 @@ const projectsData = [
     durationPL: '2 miesiące',
     engine: 'Unity',
     image: 'tap-tap-king-gameplay.mp4',
-    description: 'A hyper-casual iOS tapping game built in Unity. Cosmic challenge: tap the planet button as fast as you can for 10 seconds to beat your records!',
-    descriptionPL: 'Hyper-casualowa gra mobilna na iOS stworzona w Unity. Kosmiczne wyzwanie: tapuj przycisk z planetą tak szybko jak możesz przez 10 sekund, aby pobić swoje rekordy!',
+    description: 'Hyper-casual mobile game for iOS created in Unity. My first solo project, completed as a final exam at university, which taught me how to design mobile games as a Solo Developer',
+    descriptionPL: 'Hyper-casualowa gra mobilna na iOS stworzona w Unity. Pierwszy mój solowy projekt, zrealizowany na zaliczenie na studiach który nauczył mnie, jak projektować gry mobilne będąc Solo Developerem',
     link: 'project2.html'
   },
   {
