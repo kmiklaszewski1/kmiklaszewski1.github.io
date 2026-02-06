@@ -75,24 +75,24 @@ function renderProjects() {
     const duration = currentLang === 'pl' ? project.durationPL : project.duration;
     
     projectCard.innerHTML = `
-      <div class=\"project-image-wrapper\">
-        <video autoplay muted loop playsinline style=\"width: 100%; height: 100%; object-fit: cover;\">
-          <source src=\"${project.image}\" type=\"video/mp4\">
+      <div class="project-image-wrapper">
+        <video autoplay muted loop playsinline style="width: 100%; height: 100%; object-fit: cover;">
+          <source src="${project.image}" type="video/mp4">
         </video>
       </div>
-      <div class=\"project-meta-top\">
-        <span><i class=\"fas fa-users\"></i> ${project.team}</span>
-        <span><i class=\"fas fa-clock\"></i> ${duration}</span>
-        <span><i class=\"fas fa-code\"></i> ${project.engine}</span>
+      <div class="project-meta-top">
+        <span><i class="fas fa-users"></i> ${project.team}</span>
+        <span><i class="fas fa-clock"></i> ${duration}</span>
+        <span><i class="fas fa-code"></i> ${project.engine}</span>
       </div>
-      <div class=\"project-content\">
-        <a href=\"${project.link}\" class=\"project-title\" target=\"_blank\" rel=\"noopener noreferrer\">${title}</a>
-        <p class=\"project-role\">${role}</p>
-        <p class=\"project-desc\">${description}</p>
+      <div class="project-content">
+        <a href="${project.link}" class="project-title" target="_blank" rel="noopener noreferrer">${title}</a>
+        <p class="project-role">${role}</p>
+        <p class="project-desc">${description}</p>
       </div>
-      <div class=\"project-arrow-wrapper\">
-        <button class=\"project-arrow\" data-link=\"${project.link}\" aria-label=\"View ${title}\">
-          <i class=\"fas fa-arrow-right\"></i>
+      <div class="project-arrow-wrapper">
+        <button class="project-arrow" data-link="${project.link}" aria-label="View ${title}">
+          <i class="fas fa-arrow-right"></i>
         </button>
       </div>
     `;
