@@ -48,8 +48,7 @@ const projectsData = [
     duration: 'In Development',
     durationPL: 'W trakcie',
     engine: 'Unity 2D',
-    image: 'carrot-heist-gameplay.mp4',
-    description: 'An innovative turn-based card game utilizing a unique combat and energy management system. Features "discard for energy" mechanics, card tagging for synergy effects, multiple game modes (Story, Dungeon, PvP, Coop), character progression, and deck building. Developed as a diploma project at Collegium Da Vinci.',
+    image: 'game-of-spores-qameplay.mp4.mp4',    description: 'An innovative turn-based card game utilizing a unique combat and energy management system. Features "discard for energy" mechanics, card tagging for synergy effects, multiple game modes (Story, Dungeon, PvP, Coop), character progression, and deck building. Developed as a diploma project at Collegium Da Vinci.',
     descriptionPL: 'Innowacyjna turowa gra karciana wykorzystująca unikalny system walki i zarządzania energią. Zawiera mechanikę "odrzuć za energię", tagowanie kart dla efektów synergii, wiele trybów gry (Historia, Dungeon, PvP, Coop), progresję postaci i budowanie talii. Tworzona jako projekt dyplomowy na Collegium Da Vinci.',
     link: 'project4.html'
   }
