@@ -242,6 +242,7 @@ body {
 /* meta nad obrazem */
 .project-meta-top {
     display: flex;
+        justify-content: center;
     gap: 20px;
     padding: 16px 30px;
     background: rgba(248, 201, 212, 0.05);
