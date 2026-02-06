@@ -11,7 +11,7 @@ const projectsData = [
     engine: 'Unity',
     image: 'carrot-heist-gameplay.mp4',
     description: 'A multiplayer game inspired by Fireboy and Watergirl. I was responsible for programming mechanics, UI implementation, and creating the main menu.',
-    descriptionPL: 'Multiplayer game inspirowana gra Ogoń i Woda. Odpowiadałem za programowanie mechaniki, implementację UI i tworzenie menu głównego.',
+    descriptionPL: 'Gra multiplayer, inspirowaną grą Ogień i Woda. Odpowiadałem za programowanie, animację poszczególnych rzeczy, implementację UI, tworzeniem menu głównego oraz składaniem projektu w całość do finalnego buildu na Itch.io.',
     link: 'project1.html'
   },
   {
