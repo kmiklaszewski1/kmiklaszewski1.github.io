@@ -38,8 +38,8 @@ const projectsData = [
     durationPL: 'W trakcie',
     engine: 'Unreal Engine',
     image: 'boomfield-gameplay.mp4',
-    description: 'A dynamic multiplayer arena game inspired by classic Boom Bit gameplay. Players compete by strategically placing bombs and using environmental elements to eliminate opponents. Built in Unreal Engine 5 by a team of three students.',
-    descriptionPL: 'Dynamiczna arena multiplayer inspirowana klasycznym gameplayem Boom Bit. Gracze rywalizują poprzez strategiczne umieszczanie bomb i wykorzystywanie elementów środowiska do eliminowania przeciwników. Tworzona w Unreal Engine 5 przez zespół trzech studentów.',
+    description: 'A dynamic multiplayer arena game inspired by classic Bomb It gameplay. Players compete by strategically placing bombs and using environmental elements to eliminate opponents. Built in Unreal Engine 5 by a team of three students.',
+    descriptionPL: 'Dynamiczna arena multiplayer inspirowana klasycznym gameplayem Bomb It. Gracze rywalizują poprzez strategiczne umieszczanie bomb i wykorzystywanie elementów środowiska do eliminowania przeciwników. Tworzona w Unreal Engine 5 przez zespół trzech studentów.',
     link: 'project3.html'
   },
   {
