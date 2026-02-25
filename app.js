@@ -10,8 +10,8 @@ const projectsData = [
     durationPL: '8 miesięcy',
     engine: 'Unity',
     image: 'carrot-heist-gameplay.mp4',
-    description: 'A multiplayer game inspired by the game Fire and Water. I was responsible for programming, animating individual things, implementing the UI, creating the main menu and putting the project together for the final build on Itch.io.',
-    descriptionPL: 'Gra multiplayer, inspirowaną grą Ogień i Woda. Odpowiadałem za programowanie, animację poszczególnych rzeczy, implementację UI, tworzeniem menu głównego oraz składaniem projektu w całość do finalnego buildu na Itch.io.',
+    description: 'A co‑op game inspired by the game Fire and Water. I was responsible for programming, animating individual things, implementing the UI, creating the main menu and putting the project together for the final build on Itch.io.',
+    descriptionPL: 'Gra kooperacyjna, inspirowaną grą Ogień i Woda. Odpowiadałem za programowanie, animację poszczególnych rzeczy, implementację UI, tworzeniem menu głównego oraz składaniem projektu w całość do finalnego buildu na Itch.io.',
     link: 'project1.html'
   },
   {
